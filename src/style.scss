@@ -1,12 +1,129 @@
-/**
- * The following styles get applied both on the front of your site
- * and in the editor.
- *
- * Replace them with your own styles or remove the file completely.
- */
 
-.wp-block-create-block-boilerplate {
-	background-color: #21759b;
-	color: #fff;
-	padding: 2px;
+
+.wp-block-blocks-course-price-table {
+
+	
+	margin-left: -10px;
+	margin-left: -10px;
+	display: flex;
+	flex-wrap: wrap;
+	@for $i from 1 to 6{
+		&.has-#{$i}-columns{
+			.wp-block-blocks-course-price-block{
+				width: calc(100% / #{$i} - 20px)
+
+			}
+		}
+	}
+	.wp-block-blocks-course-price-block{
+		background-color: azure;
+		box-shadow: 5px 5px 10px rgb(160, 217, 208);
+		margin: 10px;
+		max-width: none;
+		margin: 10;
+		text-align: center;
+		border-radius: 5px;
+		border: none;
+		background: linear-gradient(to bottom, rgb(121, 121, 219) 0%, rgb(249, 254, 255) 45%, white 100%);
+
+		h4 {
+			color: white;
+			text-align: center;
+			margin-bottom: -15px;
+			margin-top: auto;
+			padding-top: 30px;
+			font-size: 1.7777777777778rem;
+			font-weight: 700 !important;
+			font-family: ProximaNova-Bold,Helvetica,Arial,sans-serif !important;
+			line-height: 1.24em !important;
+		}
+		p{
+			color: white;
+			text-align: center;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 3em;
+			display: inline-block;
+			vertical-align: middle;
+			
+		}
+		h2{
+			color: white;
+			margin-bottom: 2px;
+			margin-top: -10px;
+			font-weight: 600;
+			font-size: 60px;
+		}
+		li{
+			margin-top: 60px;
+			padding-bottom: 10px;
+			list-style-type: none;
+			letter-spacing: 0.8px;
+			line-height: 2.1em;
+			font-weight: 400;
+			font-size: 17px;
+		}
+		
+
+		p4{
+			color: #0f8e01;
+			letter-spacing: 0.8px;
+			font-weight: 400;
+			font-size: 17px;
+		}
+		p4::after {
+			content: "\a";
+			padding-bottom: 10px;
+			
+		  }
+		p3{
+			color: rgb(177, 21, 169);
+			margin-top: -10px;
+			font-size: 16px;
+		}
+		button{
+			margin-bottom: 30px;
+			margin-top: 35px;
+			background-color: rgb(255, 255, 255);
+			border-bottom-color: rgb(71, 161, 246);
+			border-bottom-left-radius: 40px;
+			border-bottom-right-radius: 40px;
+			border-bottom-style: solid;
+			border-bottom-width: 2px;
+			border-left-color: rgb(71, 161, 246);
+			border-left-style: solid;
+			border-left-width: 2px;
+			border-right-color: rgb(71, 161, 246);
+			border-right-style: solid;
+			border-right-width: 2px;
+			border-top-color: rgb(71, 161, 246);
+			border-top-left-radius: 40px;
+			border-top-right-radius: 40px;
+			border-top-style: solid;
+			border-top-width: 2px;
+			box-shadow: none;
+			box-sizing: border-box;
+			color: rgb(71, 161, 246);
+			cursor: pointer;
+			display: inline-block;
+			fill: rgb(255, 255, 255);
+			font-family: ProximaNova-Regular, Helvetica, Arial, sans-serif;
+			font-weight: 400;
+			height: 44px;
+			letter-spacing: 1px;
+			line-height: 14px;
+			padding-bottom: 13px;
+			padding-left: 26px;
+			padding-right: 26px;
+			padding-top: 13px;
+			text-align: center;
+			text-decoration-color: rgb(71, 161, 246);
+			text-decoration-line: none;
+			text-decoration-style: solid;
+			text-decoration-thickness: auto;
+			font-size: 12px;
+			text-transform: uppercase;
+
+		}
+	}
 }

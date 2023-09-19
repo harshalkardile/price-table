@@ -1,15 +1,11 @@
 import { registerBlockType } from '@wordpress/blocks';
-
+import "./price-block";
 import './style.scss';
 
-/**
- * Internal dependencies
- */
 import Edit from './edit';
 import save from './save';
-import metadata from './block.json';
 
-registerBlockType( metadata.name, {
+registerBlockType( 'blocks-course/price-table', {
 	edit: Edit,
 	save,
 } );
